@@ -48,19 +48,36 @@ table {
 }
 /* End of Reset */
 
+* {
+	color: darkslategray;
+}
+
 body {
-    margin: 1;
-    background: darkslategray;
-    padding: 20px;
+	background-color: whitesmoke;
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
 }
 
-header .container h1 {
-    background: gray;
-    position: center;
+h1 {
+	display: block;
+	font-size: 2em;
+	margin: 0.67em 0 0.67em 0;
+	font-weight: bold;
 }
 
-.container .box-1 {
-    display: flex;
-    width: 100px;
-    height: 100px;
+header .nav-container {
+	border: 2px solid orange;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#gallery .container .item .item1 img {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 20px;
+	border: 2px solid black;
+	width: 100%;
 }
