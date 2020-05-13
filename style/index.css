@@ -66,10 +66,14 @@ h1 {
 }
 
 header .nav-container {
-	border: 2px solid orange;
+	border: 2px solid transparent;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+header .nav-container {
+	font-size: 2em;
+	font-weight: bold;
 }
 
 header .nav-container .navbar nav a {
@@ -77,21 +81,24 @@ header .nav-container .navbar nav a {
 	padding: 10px;
 	display: inline-block;
 	color: darkslategray;
+	text-transform: uppercase;
 	text-decoration: none;
 	background: transparent;
 }
 
 header .nav-container .navbar nav a:hover {
-	background-color: teal;
+	background-color: skyblue;
 	color: white;
 }
 
-.big-box {
+section .big-box div {
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-evenly;
-	margin:  10px 10px;
-	border: 1px dotted orange;
+	justify-content: center;
+}
+
+.big-box {
+	background-image: url("./images/177-2515x1830.jpg");
 }
 
 #gallery .container {
@@ -108,6 +115,11 @@ header .nav-container .navbar nav a:hover {
 	width: 200px;
 	height: 150px;
 	margin-top: 10px;
+}
+.caption {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-start;
 }
 
 #gallery .container .item2 .image {
@@ -158,6 +170,7 @@ header .nav-container .navbar nav a:hover {
 	align-items: center; 
 	box-sizing: border-box;
 	padding: 10px;
-	border: none;
+	border-radius: 20px;
 	margin: 0 auto;
 }
+
