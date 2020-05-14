@@ -85,7 +85,7 @@ header .nav-container a {
 
 header .nav-container .navbar nav a {
 	margin: 0 auto;
-	padding: 10px;
+	padding: 1rem;
 	display: inline-block;
 	color: darkslategray;
 	text-transform: uppercase;
@@ -111,12 +111,17 @@ section.big-box {
 	display: flex;
 	flex-flow: row wrap;
 	border: 1px solid black;
-	border-radius: 4px;
-	width: 800px;
-	height: 400px;
+	border-radius: 0.4rem;
+	width: 80rem;
+	height: 40rem;
 	justify-content: space-around;
 	align-items: center;
+}
 
+@media (max-width: 800px){
+	section.big-box {
+		display: none;
+	}
 }
 
 section .button {
@@ -126,8 +131,8 @@ section .button {
 	background-color: transparent;
 	text-transform: uppercase;
 	box-sizing: border-box;
-	width: 250px;
-	height: 10px;
+	width: 25rem;
+	height: 1rem;
 	margin: 0 auto;
 }
 
@@ -164,61 +169,61 @@ section .button a:hover {
 
 #gallery .container .item1 .image {
 	background-image: url("./images/119-3264x2176.jpg");
-	padding: 5px;
-	width: 200px;
-	height: 150px;
-	margin-top: 10px;
+	padding: 0.5rem;
+	width: 20rem;
+	height: 15rem;
+	margin-top: 1rem;
 }
 
 #gallery .container .item2 .image {
 	background-image: url("./images/1055-5472x3648.jpg");
-	padding: 5px;
-	width: 200px;
-	height: 150px;
-	margin-top: 10px;
+	padding: 0.5rem;
+	width: 20rem;
+	height: 15rem;
+	margin-top: 1rem;
 }
 
 #gallery .container .item3 .image {
 	background-image: url("./images/1043-5184x3456.jpg");
-	padding: 5px;
-	width: 200px;
-	height: 150px;
-	margin-top: 10px;
+	padding: 0.5rem;
+	width: 20rem;
+	height: 15rem;
+	margin-top: 1rem;
 }
 
 #gallery .container .item4 .image {
 	background-image: url("./images/1040-4496x3000.jpg");
-	padding: 5px;
-	width: 200px;
-	height: 150px;
-	margin-top: 10px;
+	padding: 0.5rem;
+	width: 20rem;
+	height: 15rem;
+	margin-top: 1rem;
 }
 
 #gallery .container .item5 .image {
 	background-image: url("./images/1029-4887x2759.jpg");
-	padding: 5px;
-	width: 200px;
-	height: 150px;
-	margin-top: 10px;
+	padding: 0.5rem;
+	width: 20rem;
+	height: 15rem;
+	margin-top: 1rem;
 }
 
 #gallery .container .item6 .image {
 	background-image: url("./images/1025-4951x3301.jpg");
-	padding: 5px;
-	width: 200px;
-	height: 150px;
-	margin-top: 10px;
+	padding: 0.5rem;
+	width: 20rem;
+	height: 15rem;
+	margin-top: 1rem;
 }
 
 #gallery .container .item .image {
 	flex-flow: row wrap;
-	width: 600px;
-	height: 600px;
+	width: 60rem;
+	height: 60rem;
 	justify-content: space-around;
 	align-items: center; 
 	box-sizing: border-box;
-	padding: 10px;
-	border-radius: 20px;
+	padding: 1rem;
+	border-radius: 2rem;
 	margin: 0 auto;
 }
 
@@ -255,7 +260,7 @@ footer.shoebox div {
 .shoebox .contact a { /* This is the Contact Me button */
 	display: flex;
 	border: 1px solid black;
-	padding: 5px;
+	padding: 0.5rem;
 	text-decoration: none;
 	font-size: 1.2rem;
 	text-transform: uppercase;
@@ -265,6 +270,12 @@ footer.shoebox div {
 
 .shoebox .contact a:hover {
 	background: aliceblue;
+}
+
+@media (max-width: 500px){
+	.shoebox .footnav p {
+		display: none;
+	}	
 }
 
 /* About Page */
