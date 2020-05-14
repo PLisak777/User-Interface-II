@@ -222,6 +222,10 @@ footer.shoebox div {
 	align-items: space-around;
 }
 
+/* .socnav .fa.fa-facebook {
+	width: 100px;
+} */
+
 .shoebox .contact a { /* This is the Contact Me button */
 	display: flex;
 	color: white;
