@@ -65,6 +65,8 @@ h1 {
 	font-weight: bold;
 }
 
+/* Header Section */
+
 header .nav-container {
 	border: 2px solid transparent;
 	display: flex;
@@ -92,21 +94,37 @@ header .nav-container .navbar nav a:hover {
 	color: white;
 }
 
-section.big-box {
+/* Big-Box Marquee */
+
+.big-container {
 	display: flex;
-	flex-flow: row nowrap;
-	border: 1px solid black;
-	justify-content: space-around;
-	align-items: center;
-	margin: 20px;
-	width: 600px;
-	height: 600px;
+	justify-content: center;
 }
 
-section.big-box .namebox {
-	width: 200px;
-	height: 200px;
-	margin: auto;
+section.big-box {
+	background-image: url('/images/177-2515x1830.jpg');
+	display: flex;
+	flex-flow: row wrap;
+	border: 1px solid black;
+	border-radius: 4px;
+	width: 800px;
+	height: 400px;
+	justify-content: space-around;
+	align-items: center;
+
+}
+
+section .button {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	background-color: transparent;
+	text-decoration: none;
+	text-transform: uppercase;
+	box-sizing: border-box;
+	width: 150px;
+	height: 10px;
+	margin: 0 auto;
 }
 
 #gallery .container {
@@ -117,6 +135,10 @@ section.big-box .namebox {
 	margin: 0;
 }
 
+#gallery .container .image:hover {
+	opacity: 0.5;
+}
+
 #gallery .container .item1 .image {
 	background-image: url("./images/119-3264x2176.jpg");
 	padding: 5px;
@@ -124,12 +146,6 @@ section.big-box .namebox {
 	height: 150px;
 	margin-top: 10px;
 }
-
-/* .caption {
-	display: flex;
-	flex-flow: row wrap;
-	align-items: flex-start;
-} */
 
 #gallery .container .item2 .image {
 	background-image: url("./images/1055-5472x3648.jpg");
@@ -183,32 +199,62 @@ section.big-box .namebox {
 	margin: 0 auto;
 }
 
-footer .footnav {
-	background: transparent;
+/* Footer */
+
+footer.shoebox div {
 	display: flex;
-	justify-content: flex-start;
-	text-align: center;
+	background-color: darkorchid;
+	color: whitesmoke;
+	padding: 20px;
+	justify-content: space-around;
+	align-items: flex-start;
 }
 
-.footnav .socnav img {
+.shoebox .footnav p { /*This is the Follow Me text */
 	display: flex;
-	flex-flow: row wrap;
-	width: 10%;
-	justify-content: flex-end;
-	/* align-items: flex-end; */
+	justify-content: space-between;
+	color: white;
 }
 
-/* .socnav .fbicon {
-	width: 10%;
-	align-items: flex-start;
+.socnav .fa { /* This is the icon flex */
+	display: flex;
+	color: white;
+	align-items: space-around;
 }
 
-.socnav .gramicon {
-	width: 10%;
-	align-items: flex-start;
+.shoebox .contact a { /* This is the Contact Me button */
+	display: flex;
+	color: white;
 }
 
-.socnav img.linkicon {
-	width: 10%;
-	align-items: flex-start;
-} */
+/* Form help from freecodecamp.com */
+
+input[type=text], select, textarea {
+	width: 100%; 
+	padding: 12px;  
+	border: 1px solid gray; 
+	border-radius: 4px; 
+	box-sizing: border-box; 
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: #45a049;
+}
+
+.container {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+}

@@ -7,6 +7,8 @@
     <title>PHIL LISAK | MISUNDERSTOOD GENIUS</title>
     <link rel="stylesheet" href="./style/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <!-- Header and Navbar Section -->
@@ -25,7 +27,54 @@
 </header>
 
 <body>
-    <h1> CONTACT </h1>
+    <h1> CONTACT ME </h1>
+    <div class="container">
+        <form action="action_page.php">
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+
+    </div>
 </body>
+
+<footer>
+    <div class="footnav">
+        <p>Follow me on the Socials!</p>
+        <div class="socnav">
+            <a href='https://www.facebook.com/4degreesN'>
+                <img class="fbicon" src='./images/facebook.png'></a>
+            <a href='https://www.instagram.com/vigilantebagel/'>
+                <img class="gramicon" src='./images/insta.png'></a>
+            <a href='https://www.linkedin.com/in/plisak/'>
+                <img class="linkicon" src='./images/linkedin.png'></a>
+        </div>
+
+        <div class="socials">Icons made by <a href="https://www.flaticon.com/authors/freepik"
+                title="Freepik">Freepik</a>
+            from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        </div>
+    </div>
+    <div class="contact">
+        <a href="./contact.html">Contact Me</a>
+    </div>
+
+</footer>
 
 </html>
