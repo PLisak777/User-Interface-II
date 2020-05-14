@@ -48,6 +48,9 @@ table {
 }
 /* End of Reset */
 
+html {
+	font-size: 62.5%;
+}
 * {
 	color: darkslategray;
 }
@@ -72,10 +75,11 @@ header .nav-container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	font-size: 2.5rem;
 }
 
 header .nav-container a {
-	font-size: 2em;
+	font-size: 2.5rem;
 	font-weight: bold;
 }
 
@@ -99,6 +103,7 @@ header .nav-container .navbar nav a:hover {
 .big-container {
 	display: flex;
 	justify-content: center;
+	font-size: 2rem;
 }
 
 section.big-box {
@@ -116,16 +121,34 @@ section.big-box {
 
 section .button {
 	display: flex;
-	flex-flow: row nowrap;
+	flex-flow: row wrap;
 	justify-content: center;
 	background-color: transparent;
-	text-decoration: none;
 	text-transform: uppercase;
 	box-sizing: border-box;
-	width: 150px;
+	width: 250px;
 	height: 10px;
 	margin: 0 auto;
 }
+
+section .button a {
+	text-decoration: none;
+}
+
+section .button a:hover {
+	box-sizing: border-box;
+	animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+}
+
+/* Animation help from https://freefrontend.com/css-text-animations/ - Luminence */
+
+@keyframes reveal {
+    80%  {letter-spacing: 8px;}
+	100% {background-size: 300% 300%;}
+}
+@keyframes glow {
+    40% {text-shadow: 0 0 8px #fff;}
+}  
 
 #gallery .container {
 	display: flex;
@@ -203,35 +226,81 @@ section .button {
 
 footer.shoebox div {
 	display: flex;
-	background-color: darkorchid;
+	background-color: gainsboro;
 	color: whitesmoke;
 	padding: 20px;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: flex-start;
 }
 
 .shoebox .footnav p { /*This is the Follow Me text */
 	display: flex;
-	justify-content: space-between;
-	color: white;
+	justify-content: center;
+	font-size: 1.5rem;
+	color: black;
 }
 
-.socnav .fa { /* This is the icon flex */
+.footnav .socnav .fa { /* This is the icon flex */
 	display: flex;
-	color: white;
-	align-items: space-around;
+	flex-direction: column;
+	color: black;
+	font-size: 2rem;
+	margin: 20px;
 }
 
-/* .socnav .fa.fa-facebook {
-	width: 100px;
-} */
+.footnav .socnav a {
+	text-decoration: none;
+}
 
 .shoebox .contact a { /* This is the Contact Me button */
 	display: flex;
-	color: white;
+	border: 1px solid black;
+	padding: 5px;
+	text-decoration: none;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	background: lightblue;
+	color: darkslategrey;
+}
+
+.shoebox .contact a:hover {
+	background: aliceblue;
+}
+
+/* About Page */
+
+.container {
+	width: 100%;
+	display: flex;
+	box-sizing: border-box;
+}
+
+.container img {
+	width: 30%;
+}
+
+article {
+	display: flex;
+	width: 70%;
+	justify-content: space-between;
+	font-size: 1.8rem;
+	padding: 10px;
+}
+
+article.about {
+	flex-flow: column wrap;
+	justify-content: center;
 }
 
 /* Form help from freecodecamp.com */
+
+.container form {
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 50%;
+}
 
 input[type=text], select, textarea {
 	width: 100%; 
